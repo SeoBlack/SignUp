@@ -1,0 +1,211 @@
+:root{
+    --cyan:#1a4447;
+    --white:rgb(118, 133, 146);
+    --darkblue:rgba(3, 46, 46,.8);
+    --lightblue:#002c2d;
+    --light-gry:rgb(224, 229, 233);
+}
+.main{
+    display: flex;
+    color: var(--white);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.image-section{
+    width: 40vw;
+    height: 100vh;
+    background-image: url(./bg.jpg);
+    background-size:cover ;
+}
+.logo-container{
+    z-index: 1;
+    position: relative;
+    background-color: black;
+    opacity: 0.5;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.odin-logo{
+    width: max(40%,120px);
+}
+.logo-container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.copywrite{
+    position: absolute;
+    z-index: 1;
+    font-size: 1rem;
+    top: 97vh;
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 60vw;
+    height: 100vh;
+    background-color: var(--lightblue);
+
+}
+.form-description{
+    font-size: 1.5rem;
+    margin: 130px 50px 0px 50px;
+    
+    
+}
+fieldset{
+    display: grid;
+    grid-template: repeat(4,50%) / repeat(2,40%) ;
+    grid-gap: 20px;
+    border: none;
+    border-radius: 3px;
+    justify-content: center;
+    
+}
+input{
+    width: min(100%,300px);
+    height:min(100%,300px);
+    
+    border: 1px solid var(--white);
+    border-radius: 3px;
+    background-color: var(--lightblue);
+    color: var(--white);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.valid {
+    border-bottom-color:green;
+}
+.invalid{
+    border-bottom-color:rgb(255, 119, 119);
+}
+
+.form-inputs{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 60vw;
+    height: 45vh;
+    margin-top: 50px;
+    
+    background-color: var(--darkblue);
+    border-radius: 5px;
+
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    height: 7vh;
+}
+label{
+    margin: 10px 0px;
+    font-size: 1rem;
+}
+legend{
+    font-size: 1.5rem;
+    margin: 40px 0px;
+    padding-left: 43%;
+
+}
+.submit{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.create-btn{
+    width: max(50%,300px);
+    height: 60px;
+    font-size: 1.5rem;
+    background-color: var(--cyan);
+    color: var(--white) ;
+    border: none;
+    border-radius: 5px;
+
+}
+.create-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.create-btn:active{
+    background-color: var(--darkblue);
+    border: 1px solid var(--cyan);
+}
+a{
+    text-decoration: none;
+    color: var(--cyan);
+}
+
+@media only screen and (max-width:672px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-section{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+    .form-section{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        z-index: 1;
+        background-color: transparent;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-inputs{
+        padding-left: 0px;
+        margin-top: 2vh;
+        width: auto;
+    }
+    .create-btn{
+        width: 60vw;
+        margin-top: 0vh;
+    }
+    .submit{
+        gap:1vh ;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-container{
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    fieldset{
+        justify-content: center;
+        grid-template: repeat(4,50%) / repeat(2,40%) ;
+    
+    }
+    legend{
+        padding-left: 43%;
+    }
+    .form-description{
+        margin-top:230px ;
+        text-align: center;
+    }
+    .odin-logo{
+        width: 120px;
+    }
+    .copywrite{
+        top: 97vh;
+    }
+}

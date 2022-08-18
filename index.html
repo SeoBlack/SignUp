@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resetCss.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+    
+    <title>SignUp</title>
+</head>
+<body>
+    <div class="main">
+        <div class="image-section">
+            <div class="logo-container">
+
+                <p class="copywrite">Photo by <a href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pawel Czerwinski</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                <h1 class="logo-text">ODIN</h1>
+                <img src="./odin-lined.png" class="odin-logo">
+            </div>
+        </div>
+        <section class="form-section">
+            <div class="form-description">
+                This is not a real online service! This project is part of  <a href="https://www.theodinproject.com/">The Odin Project </a>Curriculum. Sign up now to get started.
+            </div>
+            
+            <form action="" >
+                <div class="form-inputs">
+                    <fieldset>
+                        <legend>SignUp</legend>
+                        <div class="form-item">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" placeholder="First name" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname" placeholder="Last name" required >
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        
+                        <div class="form-item">
+                            <label for="phone">Phone</label>
+                            <input type="phone" id="phone" name="phone" placeholder="Phone" title="11 Digits" required>
+                        </div>
+                        
+                        <div class="form-item">
+
+                            <label for="password">Password</label> 
+                            <input type="password" id="password" name="password" placeholder="Password" required>
+                        </div>
+                        
+                        <div class="form-item">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Password" required>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="submit">
+                    <button class="create-btn">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>                    
+                </div>
+
+            </form>
+        </section>
+    </div>
+</body>
+</html>
